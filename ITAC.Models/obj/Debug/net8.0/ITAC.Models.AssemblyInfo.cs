@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ITAC.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18834fb571ddd8f8e21dc69068b6363efc8397d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bb08eb2751b88fb815448060b68fa002c22aff4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ITAC.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ITAC.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

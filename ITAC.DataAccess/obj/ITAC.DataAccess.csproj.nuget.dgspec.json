@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User1\\source\\repos\\itac\\ITAC.Web\\ITAC.Web.csproj": {}
+    "C:\\Users\\User1\\source\\repos\\itac\\ITAC.DataAccess\\ITAC.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User1\\source\\repos\\itac\\ITAC.Web\\ITAC.Web.csproj": {
+    "C:\\Users\\User1\\source\\repos\\itac\\ITAC.DataAccess\\ITAC.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\itac\\ITAC.Web\\ITAC.Web.csproj",
-        "projectName": "ITAC.Web",
-        "projectPath": "C:\\Users\\User1\\source\\repos\\itac\\ITAC.Web\\ITAC.Web.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\source\\repos\\itac\\ITAC.DataAccess\\ITAC.DataAccess.csproj",
+        "projectName": "ITAC.DataAccess",
+        "projectPath": "C:\\Users\\User1\\source\\repos\\itac\\ITAC.DataAccess\\ITAC.DataAccess.csproj",
         "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User1\\source\\repos\\itac\\ITAC.Web\\obj\\",
+        "outputPath": "C:\\Users\\User1\\source\\repos\\itac\\ITAC.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -61,9 +61,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
