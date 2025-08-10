@@ -1,0 +1,99 @@
+﻿@model IEnumerable<ITAC.Models.Importer>
+@{
+    ViewData["Title"] = "Importers";
+    var hasData = Model != null && Model.Any();
+}
+
+<section class="intro">
+    <div class="bg-image h-100" style="background-color: #f5f7fa;">
+        <div class="mask d-flex align-items-center h-100 py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                @if (!hasData)
+                                {
+                                    <div class="p-5 text-center">
+                                        <h1 class="h4 mb-2">No importers yet</h1>
+                                        <p class="text-muted mb-4">Create your first importer to get started.</p>
+                                        <a asp-action="Create" class="btn btn-primary">Create New</a>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <!-- Optional toolbar -->
+                                    <div class="d-flex justify-content-between align-items-center px-3 py-2 border-bottom">
+                                        <h2 class="h5 mb-0">@ViewData["Title"]</h2>
+                                        <a asp-action="Create" class="btn btn-primary btn-sm">Create New</a>
+                                    </div>
+
+                                    <div class="table-responsive table-scroll" style="position: relative; height: 700px">
+                                        <table class="table table-striped mb-0 align-middle">
+                                            <thead style="background-color: #002d72;">
+                                                <tr>
+                                                    <th scope="col" class="text-white">@Html.DisplayNameFor((ITAC.Models.Importer i) => i.BusinessName)</th>
+                                                    <th scope="col" class="text-white">@Html.DisplayNameFor((ITAC.Models.Importer i) => i.TradeName)</th>
+                                                    <th scope="col" class="text-white">@Html.DisplayNameFor((ITAC.Models.Importer i) => i.CustomsNumber)</th>
+                                                    <th scope="col" class="text-white text-end" style="width: 220px;">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var item in Model)
+                                                {
+                                                    <tr>
+                                                        <td title="@item.BusinessName">@item.BusinessName</td>
+                                                        <td title="@item.TradeName">@item.TradeName</td>
+                                                        <td>
+                                                            <span class="badge text-bg-light border" title="@item.CustomsNumber">@item.CustomsNumber</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <div class="btn-group" role="group" aria-label="Row actions">
+                                                                <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-sm btn-outline-secondary">Details</a>
+                                                                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-sm btn-outline-primary">Edit</a>
+                                                                <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-outline-danger">Delete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    html, body, .intro {
+        height: 100%;
+    }
+
+    table td, table th {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .card {
+        border-radius: .5rem;
+    }
+
+    .table-scroll {
+        border-radius: .5rem;
+    }
+
+        .table-scroll table thead th {
+            font-size: 1.05rem; /* slightly reduced for long labels */
+        }
+
+    thead {
+        top: 0;
+        position: sticky;
+    }
+</style>

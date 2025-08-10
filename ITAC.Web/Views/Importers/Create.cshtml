@@ -1,0 +1,31 @@
+﻿@model ITAC.Models.Importer
+@{
+    ViewData["Title"] = "Create Importer";
+}
+<h1 class="h3 mb-3">@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post" class="needs-validation" novalidate>
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+    <div class="mb-3">
+        <label asp-for="BusinessName" class="form-label"></label>
+        <input asp-for="BusinessName" class="form-control" />
+        <span asp-validation-for="BusinessName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TradeName" class="form-label"></label>
+        <input asp-for="TradeName" class="form-control" />
+        <span asp-validation-for="TradeName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CustomsNumber" class="form-label"></label>
+        <input asp-for="CustomsNumber" class="form-control" />
+        <span asp-validation-for="CustomsNumber" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+</form>

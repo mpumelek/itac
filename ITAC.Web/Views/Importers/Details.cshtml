@@ -1,0 +1,24 @@
+﻿@model ITAC.Models.Importer
+@{
+    ViewData["Title"] = "Importer Details";
+}
+<h1 class="h3 mb-3">@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Business Name</dt>
+            <dd class="col-sm-9">@Model.BusinessName</dd>
+
+            <dt class="col-sm-3">Trade Name</dt>
+            <dd class="col-sm-9">@Model.TradeName</dd>
+
+            <dt class="col-sm-3">Customs Number</dt>
+            <dd class="col-sm-9">@Model.CustomsNumber</dd>
+        </dl>
+        <div class="mt-3">
+            <a asp-action="Edit" asp-route-id="@Model.ID" class="btn btn-primary">Edit</a>
+            <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+        </div>
+    </div>
+</div>

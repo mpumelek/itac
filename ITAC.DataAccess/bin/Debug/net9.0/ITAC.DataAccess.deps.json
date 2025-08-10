@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "ITAC.DataAccess/1.0.0": {
         "dependencies": {
+          "ITAC.Models": "1.0.0",
           "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.Design": "9.0.8",
@@ -1027,6 +1028,14 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "ITAC.Models/1.0.0": {
+        "runtime": {
+          "ITAC.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1609,6 +1618,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "ITAC.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
