@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITAC.Web", "ITAC.Web\ITAC.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITAC.Models", "ITAC.Models\ITAC.Models.csproj", "{D0925448-5362-4409-9541-9253825D864B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITAC.DataAccess", "ITAC.DataAccess\ITAC.DataAccess.csproj", "{CCEFFB4F-EF99-849D-9082-D849A0A3D051}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D0925448-5362-4409-9541-9253825D864B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0925448-5362-4409-9541-9253825D864B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0925448-5362-4409-9541-9253825D864B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCEFFB4F-EF99-849D-9082-D849A0A3D051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEFFB4F-EF99-849D-9082-D849A0A3D051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEFFB4F-EF99-849D-9082-D849A0A3D051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEFFB4F-EF99-849D-9082-D849A0A3D051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
